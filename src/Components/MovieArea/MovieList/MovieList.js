@@ -34,6 +34,13 @@ function MovieListComp() {
     const getTitle = (data) => {
         setMoviePoster(data)
         setTrailerKey('')
+        window.scrollTo(
+            {
+                top: 100,
+                left: 100,
+                behavior: 'smooth'
+              }
+        );
     }
 
     const movieSearch = async (e) => {

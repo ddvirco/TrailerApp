@@ -38,13 +38,20 @@ function TVlistComp() {
     const getDataFromCard = (data) => {
         setDataFromCard(data)
         setTrailerKey('')
+        window.scrollTo(
+            {
+                top: 100,
+                left: 100,
+                behavior: 'smooth'
+              }
+        );
     }
 
     const searchTvShow = async (e) => {
         e.preventDefault()
         const resp = await axios.get(SEARCH_TVsHOW)
         const gooArr = resp.data.results.filter((x) => {
-            if(x.vote_average > 0){
+            if(x.vote_average > 0 || x.poster_path !== null){
                 return true
             }
             else{
