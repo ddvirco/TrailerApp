@@ -1,0 +1,21 @@
+
+input {
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+textarea{
+    width: 250px;
+    height: 200px;
+    font-size: 1rem;
+}
+
+button{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(174, 173, 168);
+    font-size: 1rem
+}
+

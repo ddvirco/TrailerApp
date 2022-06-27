@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(241, 232, 229);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 8px;
+
+}
+
+.search-movie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-movie input{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-movie input:focus{
+    outline: none;
+}
+
+.search-movie button{
+    font-size: 1rem;
+    color: #0f0f0f ;
+    text-align: center;
+    border: none;
+    /* background: transparent; */
 }

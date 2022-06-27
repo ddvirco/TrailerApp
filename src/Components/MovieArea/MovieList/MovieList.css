@@ -1,0 +1,88 @@
+.cover-photo{
+    position: relative;
+    color: white;
+}
+.cover-photo img{
+    /* height: 500px;
+    width: 110%;
+    border-radius: 0;
+    margin-left: -65px; */
+    background-size: cover;
+    background-position: top center;
+    min-height: 600px;
+    display: flex; 
+    align-items: flex-end;
+    /* padding-bottom: 50px; */
+    /* position: relative; */
+}
+
+.movieList{
+    margin: 1rem 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;   
+}
+
+.movie-title{
+    position: absolute;
+    /* right: 50%;
+    left: 50%; */
+    bottom: 23%;
+    font-size: 2.5rem;
+    text-shadow: 0 0 3px #000000
+}
+
+.movie-overview{
+    position: absolute;
+    bottom: 10%;
+    /* font-size: 3rem; */
+    /* padding: 48px; */
+}
+.movie-overview p {
+    text-align: start;
+    margin: none;
+    text-shadow: 0 0 3px #000000;
+}
+
+.trailerButton{
+    position: absolute;
+    margin: 15px;
+}
+
+.trailerButton button{
+    width:150px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+
+.iframe-movie{
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 50vh;        /* Viewport-relative units */
+    width: 80vw;
+}
+
+@media screen and (max-width:530px){
+    .movieList{
+        margin: 0.6rem 0; 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px;   
+    }
+    .movie-overview{
+        display: none;
+    }
+    .movie-title{
+        position: absolute;
+        /* right: 50%;
+        left: 50%; */
+        bottom: 15%;
+        font-size: 1.2rem;
+    }
+    .cover-photo img{
+        width: 120%;
+    }
+    
+}

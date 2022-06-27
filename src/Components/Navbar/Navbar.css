@@ -1,0 +1,23 @@
+.navbar{
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid #eeeeee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.menu {
+    justify-self: center;
+}
+
+.nav-menu{
+    display: flex;
+} 
+
+.nav-menu li{
+    padding-left: 1rem;
+    font-size: 1rem;
+    list-style-type: none;
+}
+

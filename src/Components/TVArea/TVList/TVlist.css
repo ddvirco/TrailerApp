@@ -1,0 +1,71 @@
+.TVlist{
+    margin: 1rem 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.cover-photo{
+    position: relative;
+    color: white;
+}
+.cover-photo img{
+    height: 500px;
+    width: 110%;
+    border-radius: 0;
+    margin-left: -65px;
+}
+.tv-title{
+    position: absolute;
+    bottom: 15%;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #000000
+}
+
+.overview{
+    position: absolute;
+    bottom: 3%;
+    text-align: left;
+    text-shadow: 0 0 3px #000000
+}
+
+.youtube-TV{
+    position: absolute;
+    margin: 15px;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #000000
+}
+
+.youtube-TV > button{
+    width:150px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.iframe-class{
+    display: block;       
+    background: #000;
+    border: none;         
+    height: 50vh;        
+    width: 80vw;
+}
+
+@media screen and (max-width:530px){
+    .TVlist{
+        margin: 0.6rem 0; 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px;   
+    }
+    .overview{
+        display: none;
+    }
+    .tv-title{
+        position: absolute;
+        bottom: 15%;
+        font-size: 1.2rem;
+    }
+    .cover-photo img{
+        width: 120%;
+    }
+    
+}
